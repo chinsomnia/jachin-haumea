@@ -3,11 +3,45 @@ body {
   color: #004640;
   font-family: "Nunito", sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  background-color: #c97796;
+  width: 100%;
+  max-height: 10%;
+  border-bottom-style: solid;
+  border-color: #ab627e;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 12%;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.navbar ul li {
+  flex: 1;
+}
+
+.navbar ul li a {
+  color: white;
 }
 
 .header {
   display: flex;
   align-items: center;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 h1 {
@@ -25,9 +59,7 @@ h1 {
 #ja-photo {
   max-width: 30%;
   padding: 20px;
-  border-radius: 7%;
-  position: relative;
-  align-self: right;
+  border-radius: 50%;
 }
 
 h2 {
@@ -51,9 +83,12 @@ h2 {
 }
 
 #Connect {
-  background-color: #f6dce6;
-  margin-top: 5px;
-  padding: 5px;
+  background-color: #c97796;
+  padding: 1px;
+}
+
+#Connect h2 {
+  color: black;
 }
 
 a {
@@ -61,20 +96,34 @@ a {
   text-decoration: none;
 }
 
-#Experience ul li {
+#Experience section {
   list-style: none;
   background-color: #c98896;
+  padding: 3em;
+  margin: 2em;
+  border-radius: 0.7em;
   color: whitesmoke;
-  padding: 1em 0.5em;
-  margin: 3em 6em 3em 3em;
-  border-radius: 0.9em;
-  font-weight: bolder;
 }
 
-#Connect ul li {
-  list-style: none;
+#Experience ul li {
   display: inline-flex;
-  margin: 14px;
+  margin: 0 5%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.experience-details {
+  font-weight: lighter;
+  font-size: smaller;
+  width: 100%;
+}
+
+#Connect ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20% 5% 20%;
 }
 
 .logo {
@@ -82,8 +131,7 @@ a {
 }
 
 button {
-  padding: 5px;
-  background-color: #f6dce6;
+  background-color: #c97796;
   border: 10px none;
   max-width: 80px;
 }
