@@ -1,12 +1,13 @@
 const addFooter = document.createElement("footer");
+document.body.append(addFooter);
 
 const currentDate = new Date();
 const thisYear = currentDate.getFullYear();
 
-const footer = document.querySelectorAll("footer");
+const footer = document.querySelector("footer"); //removed querySelectorAll and changed to querySelector
 const copyright = document.createElement("p");
 copyright.innerHTML = `© Chin Antalan ${thisYear}`;
-document.body.appendChild(copyright);
+footer.appendChild(copyright);
 copyright.style.backgroundColor = "black";
 copyright.style.color = "white";
 copyright.style.fontSize = ".8rem";
