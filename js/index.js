@@ -8,10 +8,6 @@ const footer = document.querySelector("footer"); //removed querySelectorAll and 
 const copyright = document.createElement("p");
 copyright.innerHTML = `© Chin Antalan ${thisYear}`;
 footer.appendChild(copyright);
-copyright.style.backgroundColor = "black";
-copyright.style.color = "white";
-copyright.style.fontSize = ".8rem";
-copyright.style.padding = ".8rem";
 
 const skills = ["Javascript", "HTML", "CSS", "GitHub", "Adobe Illustrator"];
 const skillsSection = document.getElementById("skills");
@@ -41,6 +37,7 @@ messageForm.addEventListener("submit", (event) => {
   removeButton.addEventListener("click", (event) => {
     const entry = event.target.parentNode;
     entry.remove();
+    messageList.remove();
   });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
