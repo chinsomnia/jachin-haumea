@@ -90,6 +90,10 @@ h2 {
   padding: 35px;
 }
 
+#Experience ul {
+  padding-left: 0;
+}
+
 #Connect {
   background-color: #c97796;
   padding: 1px;
@@ -132,6 +136,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 20% 5% 20%;
+  padding-left: 0;
 }
 
 .logo {
@@ -205,11 +210,18 @@ button {
     background-color: #f6dce6;
     margin: 1em;
     padding: 1em;
+    padding-left: 0;
   }
 
   #Connect ul {
     margin: 0 5%;
+    padding-left: 0;
   }
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Tablet style */
@@ -240,4 +252,9 @@ button {
     font-size: 2rem;
     margin: 1rem;
   }
+}
+
+#skills ul {
+  list-style: none;
+  padding-left: 0;
 }
