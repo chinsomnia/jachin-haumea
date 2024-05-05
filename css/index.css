@@ -254,7 +254,8 @@ p {
   }
 }
 
-#skills ul {
+#skills ul,
+#Projects ul {
   list-style: none;
   padding-left: 0;
 }
