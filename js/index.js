@@ -21,3 +21,20 @@ for (i = 0; i < skills.length; i++) {
   skill.innerHTML = `${skills[i]}`;
   skillsList.appendChild(skill);
 }
+
+fetch("https://api.github.com/users/chinsomnia/repos")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    const repositories = data;
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerHTML = `${repositories[i].name}`;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => console.error(error));
