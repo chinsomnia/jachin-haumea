@@ -259,3 +259,15 @@ p {
   list-style: none;
   padding-left: 0;
 }
+
+#messages a {
+  text-decoration: underline;
+  color: blue;
+}
+
+footer p {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+}
