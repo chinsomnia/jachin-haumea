@@ -30,6 +30,7 @@ fetch("https://api.github.com/users/chinsomnia/repos")
     const repositories = data;
     const projectSection = document.getElementById("Projects");
     const projectList = projectSection.querySelector("ul");
+    console.log(repositories);
 
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement("li");

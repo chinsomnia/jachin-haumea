@@ -2,6 +2,11 @@
 
 Welcome to my portfolio website! This project was created as a completion project for my Introduction to Programming class with Code the Dream. It serves to share information about my background, education, projects, and skills, and provides links to connect with me.
 
+## OPEN API Project
+
+[My Open API Project]
+(https://github.com/chinsomnia/API-Project)
+
 ## About Me
 
 Hi, I'm Chin Antalan, an aspiring software engineer with a passion for technology and design. I have experience with HTML, CSS, JavaScript, GitHub, VSCode, Adobe Illustrator, and Adobe Premiere Pro. This portfolio showcases my journey and the projects I have worked on.

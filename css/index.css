@@ -265,6 +265,12 @@ p {
   color: blue;
 }
 
+#messages ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 footer p {
   background-color: black;
   color: white;
