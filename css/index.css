@@ -1,5 +1,11 @@
 /* Desktop style */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #90dad8;
   color: #004640;
@@ -42,6 +48,10 @@ h1 {
   color: white;
   justify-content: space-between;
   padding: 10px;
+}
+
+#section {
+  width: 100%;
 }
 
 .header {
@@ -137,6 +147,7 @@ a {
   justify-content: space-between;
   margin: 0 20% 5% 20%;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -257,7 +268,32 @@ p {
 #skills ul,
 #Projects ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 0;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+#Projects li {
+  border: #04b3a5 groove 2px;
+  padding: 1rem;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+
+.skills-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color:#f6dce6;
+  padding: .5rem 1rem;
+  border-radius: 20px;
 }
 
 #messages a {
@@ -268,7 +304,20 @@ p {
 #messages ul {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#messages li {
+  border:#04b3a5 2px solid;
+  padding: 3rem;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
 }
 
 footer p {
