@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jachin's Website</title>
+    <title>Jachin's Portfolio Website</title>
     <meta name="author" content="Jachin A." />
     <meta name="description" content="Developer Profile" />
     <link href="css/index.css" rel="stylesheet" />
@@ -24,6 +24,7 @@
           <li><a href="#Experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#Projects">Projects</a></li>
+          <li><a href="#messages">Message</a></li>
           <li><a href="#Connect">Connect</a></li>
         </ul>
       </nav>
@@ -33,7 +34,7 @@
       <img
         id="ja-photo"
         src="img/ja-photo.jpg"
-        alt="profile picture of Jachin with a city skyline background"
+        alt="profile picture of Jachin against a city skyline background"
       />
     </div>
     <section id="About">
@@ -100,8 +101,10 @@
       <ul></ul>
     </section>
     <section id="skills">
-      <h2>Skills</h2>
-      <ul></ul>
+      <div class="skills-container">
+        <h2>Skills</h2>
+      <ul class="skills-list"></ul>
+      </div>
     </section>
     <section>
       <h2>Leave a Message</h2>
@@ -119,26 +122,22 @@
       </form>
     </section>
     <section id="messages">
-      <h2 class="msg">Messages</h2>
-      <ul></ul>
+      <h2>Messages</h2>
+      <ul id="message-content"></ul>
     </section>
     <!-- <footer> footer </footer> -->
     <section id="Connect">
       <h2>Connect</h2>
       <ul>
         <li>
-          <button>
-            <a href="https://github.com/chinsomnia" target="_blank">
-              <img class="logo" src="img/socmed-logo/github-logo.png" />
-            </a>
-          </button>
+          <a href="https://github.com/chinsomnia" target="_blank">
+            <img class="logo" src="img/socmed-logo/github-logo.png" />
+          </a>
         </li>
         <li>
-          <button>
-            <a href="https://www.linkedin.com/in/chinantalan/" target="_blank">
-              <img class="logo" src="img/socmed-logo/linkedin-logo.png" />
-            </a>
-          </button>
+          <a href="https://www.linkedin.com/in/chinantalan/" target="_blank">
+            <img class="logo" src="img/socmed-logo/linkedin-logo.png" />
+          </a>
         </li>
         <li>
           <a href="https://www.instagram.com/chinstagrammed" target="_blank">
@@ -152,6 +151,7 @@
         </li>
       </ul>
     </section>
+
     <script src="js/index.js"></script>
   </body>
 </html>

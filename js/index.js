@@ -4,6 +4,8 @@ document.body.append(addFooter);
 const currentDate = new Date();
 const thisYear = currentDate.getFullYear();
 
+// Insert the copyright logo, current year, and student's name in the footer of index.html:
+
 const footer = document.querySelector("footer"); //removed querySelectorAll and changed to querySelector
 const copyright = document.createElement("p");
 copyright.innerHTML = `© Chin Antalan ${thisYear}`;
@@ -13,6 +15,8 @@ copyright.style.color = "white";
 copyright.style.fontSize = ".8rem";
 copyright.style.padding = ".8rem";
 
+// Using an array, insert the array items as a list of skills in the skills section of index.html:
+
 const skills = ["Javascript", "HTML", "CSS", "GitHub", "Adobe Illustrator"];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
@@ -21,6 +25,8 @@ for (i = 0; i < skills.length; i++) {
   skill.innerHTML = `${skills[i]}`;
   skillsList.appendChild(skill);
 }
+
+// Use fetch to display repositories from Github API:
 
 fetch("https://api.github.com/users/chinsomnia/repos")
   .then((response) => {
@@ -40,6 +46,9 @@ fetch("https://api.github.com/users/chinsomnia/repos")
   })
   .catch((error) => console.error(error));
 
+
+// Message form submit and display function
+
 const messageForm = document.querySelector('[name="leave_message"]');
 
 messageForm.addEventListener("submit", (event) => {
@@ -52,19 +61,21 @@ messageForm.addEventListener("submit", (event) => {
   const messageSection = document.querySelector('[id="messages"]');
   const messageList = messageSection.querySelector("ul");
   const newMessage = document.createElement("li");
-  newMessage.innerHTML = `<a href="${usersEmail}">${usersName}</a>, <span>${usersMessage}</span>`;
+  newMessage.innerHTML = `<a href="${usersEmail}">${usersName}</a> <br> <span>${usersMessage}</span> <br>`;
 
+  
   //remove button
   const removeButton = document.createElement("button");
-  removeButton.innerHTML = `<button>remove</button>`;
+  removeButton.innerHTML = `remove`;
   removeButton.addEventListener("click", (event) => {
     const entry = event.target.parentNode;
     entry.remove();
-    messageList.remove();
+    newMessage.remove();
   });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
-
+  
   //reset form
   event.target.reset();
+  
 });
