@@ -184,6 +184,11 @@ button {
     flex-direction: column;
   }
 
+  .navbar ul li a {
+    font-size: 1.2rem;
+    padding: 1.2rem auto;
+  }
+
   .landing-page {
     display: flex;
     flex-direction: column;
@@ -254,8 +259,11 @@ p {
 
   .navbar ul {
     margin-top: 0px;
-    font-size: 14px;
     font-weight: bolder;
+  }
+
+  .navbar ul li a {
+    font-size: 1rem;
   }
 
   .header h1 {
