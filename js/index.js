@@ -26,7 +26,7 @@ for (i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
-// Use fetch to display repositories from Github API:
+// Use fetch to display project repositories from Github API:
 
 fetch("https://api.github.com/users/chinsomnia/repos")
   .then((response) => {
@@ -61,7 +61,7 @@ messageForm.addEventListener("submit", (event) => {
   const messageSection = document.querySelector('[id="messages"]');
   const messageList = messageSection.querySelector("ul");
   const newMessage = document.createElement("li");
-  newMessage.innerHTML = `<a href="${usersEmail}">${usersName}</a> <br> <span>${usersMessage}</span> <br>`;
+  newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <br> <span>${usersMessage}</span> <br>`;
 
   
   //remove button
@@ -70,7 +70,6 @@ messageForm.addEventListener("submit", (event) => {
   removeButton.addEventListener("click", (event) => {
     const entry = event.target.parentNode;
     entry.remove();
-    newMessage.remove();
   });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
